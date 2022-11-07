@@ -1,3 +1,10 @@
-.visualiser {
+.visualiser-bg {
   background-color: $alt-dark-theme;
+}
+
+#player-container {
+  height: 100vh;
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }

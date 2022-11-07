@@ -46,8 +46,19 @@ footer {
   font-style: italic;
 }
 
-.visualiser {
+.modal-content {
   background-color: #2f353a;
+}
+
+.visualiser-bg {
+  background-color: #2f353a;
+}
+
+#player-container {
+  height: 100vh;
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }
 
 /*# sourceMappingURL=main.css.map */
