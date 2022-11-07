@@ -1,0 +1,65 @@
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    box-shadow: inset $top $left $blur $color;
+  } @else {
+    box-shadow: $top $left $blur $color;
+  }
+}
+
+@mixin flex($direction: row, $content: null, $items: null, $wrap: null) {
+  display: flex;
+  flex-direction: $direction;
+  @if $content {
+    justify-content: $content;
+  }
+  @if $items {
+    align-items: $items;
+  }
+  @if $wrap {
+    flex-wrap: $wrap;
+  }
+}
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+@mixin centerAbsolute($pos: 'both') {
+  position: absolute;
+  @if $pos == 'both' {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } @else if $pos == 'left' {
+    left: 50%;
+    transform: translateX(-50%);
+  } @else if $pos == 'top' {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+@mixin mq($width, $type: min) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    @if $type == max {
+      $width: $width - 1px;
+    }
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}

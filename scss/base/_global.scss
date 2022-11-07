@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @include font-default(false, $font-color);
+  @include flex(column);
+  & > main {
+    flex: 1 1 auto;
+  }
+  min-height: 100vh;
+  background-image: url('../../images/index-bg.jpg');
+  @include mq('tablet', max) {
+    background-image: url('../../images/index-bg-m.jpg');
+  }
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.navbar,
+footer {
+  background-color: $main-dark-theme;
+  color: $nav-font-color;
+}
+
+.navbar {
+  a {
+    color: $nav-font-color;
+    &:hover {
+      color: $font-color;
+      text-decoration: none;
+    }
+  }
+  .nav-link {
+    color: $nav-font-color;
+    &:hover {
+      color: $font-color;
+      font-style: italic;
+    }
+  }
+}

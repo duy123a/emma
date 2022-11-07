@@ -1,0 +1,15 @@
+$breakpoints: (
+  'phone': 400px,
+  'phone-wide': 480px,
+  'phablet': 560px,
+  'tablet-small': 640px,
+  'tablet': 768px,
+  'tablet-wide': 1024px,
+  'desktop': 1248px,
+  'desktop-wide': 1440px,
+);
+
+$main-dark-theme: #212529;
+$alt-dark-theme: #2f353a;
+$font-color: white;
+$nav-font-color: #b4afaf;
