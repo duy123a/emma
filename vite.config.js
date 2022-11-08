@@ -7,7 +7,6 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        character: resolve(__dirname, 'c.html'),
         visualiser: resolve(__dirname, 'v.html'),
       },
     },
