@@ -223,7 +223,7 @@ function zoomWithMouse() {
   } else if (isMobile()) {
     const newStyle = document.createElement('style');
     newStyle.innerHTML = `
-    .spine-player-canvas {margin-left: -80%;}
+    .spine-player-canvas {margin-left: -70%;}
     .spine-player-controls {position: absolute; left: -15%;}
     #visualiser__list {position: relative; bottom: 0;margin-left:0;}
     #visualiser .visualiser__card{margin-left: -30px;}
