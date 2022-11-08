@@ -14,7 +14,10 @@
     />
 
     <!-- Customised spine player made by esoteric softwares-->
-    <link rel="stylesheet" href="styles/spine-player.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@esotericsoftware/spine-player@4.0.*/dist/spine-player.css"
+    />
 
     <!-- Font awesome -->
     <link
@@ -61,9 +64,12 @@
       </div>
     </nav>
 
-    <main class="visualiser-bg">
-      <div id="player-container"></div>
-      <!-- <div class="scrollbar-msg">Press "z" to reset the zoom and placement</div> -->
+    <main id="visualiser">
+      <ul id="visualiser__list"></ul>
+      <div
+        id="player-container"
+        style="height: 100vh; position: absolute; left: 0px; top: 0px"
+      ></div>
     </main>
 
     <!-- JavaScript Bundle with Popper -->
@@ -72,7 +78,7 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
-    <script src="js/spine-player.js"></script>
+    <script src="https://unpkg.com/@esotericsoftware/spine-player@4.0.*/dist/iife/spine-player.js"></script>
     <!-- Scripts should be placed here to prevent blocking render UI -->
     <script type="module" src="js/visualiser.js"></script>
   </body>

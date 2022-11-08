@@ -13,3 +13,7 @@ export function isMobile() {
   }
   return isMobile;
 }
+
+export function isIpad() {
+  return navigator.userAgent.includes('iPad');
+}

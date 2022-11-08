@@ -12,7 +12,7 @@ body {
   }
   min-height: 100vh;
   background-image: url('../../images/index-bg.jpg');
-  @include mq('tablet', max) {
+  @include mq('desktop', max) {
     background-image: url('../../images/index-bg-m.jpg');
   }
   background-size: cover;
@@ -24,21 +24,21 @@ body {
 .navbar,
 footer {
   background-color: $main-dark-theme;
-  color: $nav-font-color;
+  z-index: 1;
 }
 
 .navbar {
   a {
-    color: $nav-font-color;
+    color: $font-color;
     &:hover {
-      color: $font-color;
+      color: $hover-font-color;
       text-decoration: none;
     }
   }
   .nav-link {
-    color: $nav-font-color;
+    color: $font-color;
     &:hover {
-      color: $font-color;
+      color: $hover-font-color;
       font-style: italic;
     }
   }
