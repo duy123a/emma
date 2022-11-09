@@ -95,7 +95,7 @@ footer {
 
 .spine-player-canvas {
   margin-left: 10%;
-  height: 95%;
+  height: 100%;
 }
 @media only screen and (max-width: 1247px) {
   .spine-player-canvas {
