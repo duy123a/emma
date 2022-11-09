@@ -1,6 +1,7 @@
 import { getCharacterList } from './api/fetchClient';
-import { isIpad, isMobile } from './utils';
 import RELEASED_UNITS from './constants/releasedUnits';
+import { isIpad, isMobile } from './utils';
+import spine from './utils/spine-player';
 
 // global var
 let currentSpine = '';

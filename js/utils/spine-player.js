@@ -13695,3 +13695,5 @@ new spine.SpinePlayer("player-container", {
 		`.trim();
   return src_exports;
 })();
+
+export default spine;
