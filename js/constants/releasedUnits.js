@@ -19,7 +19,7 @@ const RELEASED_UNITS = [
   'Ether',
   'Eunhwa',
   'Exia',
-  'Fólkvangr',
+  'Folkwang',
   'Frima',
   'Guillotine',
   'Harran',
